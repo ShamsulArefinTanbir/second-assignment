@@ -1,0 +1,271 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+header, main {
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+/* -----Animation ---- */
+
+@keyframes pic-moving {
+    from { left: 0;}
+    to { left: 60px;}
+}
+
+@keyframes button {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+   
+  }
+
+  .header-text button {
+    animation: button 2s ease  infinite alternate ;
+    border: none;
+    outline: none;
+    background: rgba(153, 255, 0, 0.7);
+    color: white;
+    font-size: 1.5em;
+    padding: .8em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    border-radius: .3em;
+}
+
+.animated-img {
+
+    background: url("images/neymarr.png");
+        animation: pic-moving 2s infinite alternate ;
+        animation-play-state: running;
+ 
+    }
+
+
+
+/*------- Header Part---- */
+
+header {
+    background: #191446;
+    border-radius: 1.9em;
+    color: white;
+    display: flex;
+    padding: 1.9em 5em 1.9em 6.2em;
+    margin: 3.1em auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    width: 65%;
+}
+
+.header-text h2 {
+    font-size: 4em;
+    line-height: 1.3em;
+}
+
+.header-text p {
+    margin: 2em 0;
+    font-size: 1.5em;
+}
+
+.header-text button {
+    border: none;
+    outline: none;
+    background: rgba(153, 255, 0, 0.7);
+    color: white;
+    font-size: 1.5em;
+    padding: .8em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    border-radius: .3em;
+}
+
+
+.header-text button:hover {
+    border: none;
+    outline: none;
+    background: rgb(245, 71, 23);
+    box-shadow: 5px 5px 5px gray;
+    color: white;
+    font-size: 1.5em;
+    padding: .8em 2em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    border-radius: .3em;
+}
+
+
+.fa-arrow-right {
+    font-size: 1.3em;
+}
+
+header img {
+    width: 30%;
+}
+
+/* Header Part End  */
+
+main {
+    display: flex;
+    gap: 30px;
+}
+
+/* -----Menu Styles---- */
+
+aside ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 312px;
+    height: 312px;
+    padding: 30px;
+    background-color: #191446;
+    border-radius: 10px;
+    animation-delay: 2s;
+}
+
+aside a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    background:white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#selected {
+    background:rgba(153, 255, 0, 0.7);
+    color: white;
+    animation-delay: 2s;
+}
+
+
+/* ----main content ------ */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+    row-gap: 2em;
+}
+
+.box {
+    border: .1mm solid rgba(128, 128, 128, 0.3);
+    border-radius: 1em;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.details {
+    padding: 1em;
+}
+
+.details button {
+    outline: none;
+    background: none;
+    border: 1px solid grey;
+    padding: .4em 1.2em;
+    border-radius: .2em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.details h3 {
+    margin: 1em 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.time-and-comment {
+    display: flex;
+    gap: 1.5em;
+    color: grey;
+}
+
+.time-and-comment i {
+    margin-right: .5em;
+}
+
+/* tablet view-all button  */
+
+.view-all {
+    display: none;
+    justify-content: center;
+    margin: 1em auto 3em;
+}
+
+#view-all {
+    text-decoration: none;
+    background:rgba(153, 255, 0, 0.7);
+    color: white;
+    padding: .7em 2em;
+    font-size: 1.3em;
+    border-radius: .3em;
+}
+
+
+/* ------footer----- */
+
+footer {
+    background-color: #100c33;
+    margin-top: 13em;
+    padding: 8em 0 6em;
+}
+
+footer h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+footer hr {
+    border: 1px solid rgb(65, 60, 60);
+    width: 80%;
+    margin: 3em auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu, .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.social-links i {
+    color: #100c33;
+    background: rgba(255, 255, 255, 0.9);
+    height: 2em;
+    width: 2em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
